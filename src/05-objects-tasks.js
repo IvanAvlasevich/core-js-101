@@ -21,10 +21,12 @@
  *    console.log(r.getArea());   // => 200
  */
 function Rectangle(width, height) {
-  this.width = width;
-  this.height = height;
-  this.getArea = function () {
-    return this.height * this.width;
+  return {
+    width,
+    height,
+    getArea() {
+      return width * height;
+    },
   };
 }
 
@@ -120,6 +122,7 @@ const cssSelectorBuilder = {
   element(/* value */) {
     throw new Error('Not implemented');
   },
+
   id(/* value */) {
     throw new Error('Not implemented');
   },
